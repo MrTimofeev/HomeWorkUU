@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # coding: utf-8
 
-class Tournament     ():
+class Tournament():
 
     def __init__(self, team1, team2):
         self.team1 = team1
