@@ -2,9 +2,6 @@
 # coding: utf-8
 import unittest
 
-# Оригинальный код классов Runner и Tournament с исправлениями
-
-
 class Runner:
     def __init__(self, name, speed=5):
         self.name = name
