@@ -74,6 +74,9 @@ async def send_calories(message: Message, state: FSMContext):
     bmr = 10 * weight + 6.25 * growth - 5 * age + 5
     await message.answer(f"Ваша норма каллорий: {bmr}")
 
+    # Завершение машины состояний
+    await state.clear()
+
 
 async def main() -> None:
     bot = Bot(token=API_TOKEN, default=DefaultBotProperties(
